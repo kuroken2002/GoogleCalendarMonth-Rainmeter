@@ -58,5 +58,9 @@ Latest: **v1.0.1**
 - `Variables.inc` のコメント表記を修正 / Fixed comments in `Variables.inc`
 
 ## Author
+## Rainmeter Forum
 
+Discussion, feedback and support are available on the official Rainmeter Forum.
+
+[Google Calendar Month v1.0.1 - Rainmeter Forums](https://forum.rainmeter.net/viewtopic.php?t=46019)
 **kuroken2002**
