@@ -57,6 +57,19 @@ Latest: **v1.0.1**
 - Version情報を修正 / Fixed version information
 - `Variables.inc` のコメント表記を修正 / Fixed comments in `Variables.inc`
 
+## Beta version available
+
+v1.1.0-beta.1 is now available.
+
+- 今日・明日の予定の音声読み上げ
+- 定時読み上げ
+- Rainmeter起動時の読み上げ
+- 専用設定画面
+- カレンダー更新間隔の設定
+- 読み上げ判定間隔の設定
+  
+This beta adds schedule voice reading, scheduled announcements, and a dedicated settings screen.
+
 ## Author
 ## Rainmeter Forum
 
