@@ -70,6 +70,12 @@ v1.1.0-beta.1 is now available.
   
 This beta adds schedule voice reading, scheduled announcements, and a dedicated settings screen.
 
+## issue
+- BYDAYを使用した月次の繰り返し予定（例：毎月第4水曜日）が、正しくない日付に表示される場合があります。
+  現在修正対応中です。
+  Monthly recurring events using BYDAY (for example, the 4th Wednesday of each month) may be displayed on the wrong date.
+  A fix is being investigated.
+  
 ## Author
 ## Rainmeter Forum
 
