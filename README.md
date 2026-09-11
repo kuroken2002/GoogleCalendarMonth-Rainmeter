@@ -81,5 +81,5 @@ This beta adds schedule voice reading, scheduled announcements, and a dedicated 
 
 Discussion, feedback and support are available on the official Rainmeter Forum.
 
-[Google Calendar Month v1.0.1 - Rainmeter Forums](https://forum.rainmeter.net/viewtopic.php?t=46019)
+[Google Calendar Month v1.1.1 - Rainmeter Forums](https://forum.rainmeter.net/viewtopic.php?t=46019)
 **kuroken2002**
