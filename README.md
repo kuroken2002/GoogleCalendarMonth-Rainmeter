@@ -8,9 +8,11 @@ A Rainmeter skin that displays Google Calendar events in a monthly calendar view
 - GoogleカレンダーのiCal連携 / Google Calendar iCal integration
 - 月間カレンダー表示 / Monthly calendar view
 - 先月・今月・来月への移動 / Navigate previous, current, and next month
-- 日本語表示対応 / Japanese display support
-- 1日最大3件の予定を表示 / Displays up to 3 events per day
+- 1日に表示する予定数を1〜3件から選択可能 / Configurable 1–3 events displayed per day
+- 予定表示数に応じてカレンダーの高さを自動調整 / Calendar height automatically adjusts to the selected event count
 - 専用設定画面 / Dedicated settings screen
+- タブ形式のコンパクトな設定画面 / Compact tab-based settings screen
+- 低解像度PC向けのレイアウト / Improved layout for low-resolution displays
 - カレンダー更新間隔を設定可能 / Configurable calendar update interval
 - 予定色を文字背景として表示 / Optional event color backgrounds
 - 予定色の背景表示をON/OFF可能 / Event color backgrounds can be enabled or disabled
@@ -21,6 +23,13 @@ A Rainmeter skin that displays Google Calendar events in a monthly calendar view
 - 定時読み上げを2件まで設定可能 / Up to 2 scheduled voice announcement times
 - 読み上げ判定間隔を設定可能 / Configurable speech check interval
 - 「予定はありません」の読み上げON/OFF / Optional "no events" voice announcement
+- 多言語UI対応 / Multilingual UI support
+  - 日本語 / Japanese
+  - English
+  - Français / French
+  - Deutsch / German
+- 選択中の設定を色で確認可能 / Selected settings are visually highlighted
+- iCal URL未設定時は古い予定キャッシュを自動削除 / Cached events are automatically cleared when no iCal URL is configured
 
 ## 必要環境 / Requirements
 
@@ -55,11 +64,79 @@ Open Google Calendar settings, select the calendar you want to use,
 open **Integrate calendar**, and copy the  
 **Secret address in iCal format** into the skin settings.
 
+iCal URLが未設定の場合は、以前取得した予定データは自動的にクリアされます。
+
+If no iCal URL is configured, previously cached calendar data is automatically cleared.
+
+## 設定画面 / Settings
+
+v1.1.2では設定画面を3つのタブに分割しました。
+
+- 基本設定
+- 読み上げ
+- 定時読み上げ
+
+Version 1.1.2 divides the settings screen into three tabs:
+
+- Basic
+- Speech
+- Scheduled Speech
+
+低解像度のノートPCなどでも設定しやすいよう、画面サイズをコンパクトにしています。
+
+The settings screen has been made more compact for easier use on low-resolution displays.
+
+## 表示予定数 / Events Per Day
+
+1日に表示する予定数を以下から選択できます。
+
+- 1件
+- 2件
+- 3件
+
+初期値は1件です。
+
+The number of events displayed per day can be selected from:
+
+- 1 event
+- 2 events
+- 3 events
+
+The default is 1 event per day.
+
+選択した予定数に合わせて、カレンダー全体の高さも自動的に変更されます。
+
+The calendar height automatically changes according to the selected number of events.
+
+## 多言語表示 / Multilingual Interface
+
+v1.1.2ではUIの多言語表示に対応しました。
+
+対応言語:
+
+- 日本語
+- English
+- Français
+- Deutsch
+
+Version 1.1.2 adds multilingual UI support.
+
+Supported languages:
+
+- Japanese
+- English
+- French
+- German
+
+ボタン、タブ、設定項目、説明文などは言語ファイルから読み込まれます。
+
+Buttons, tabs, settings labels, and descriptions are loaded from language files.
+
 ## 音声読み上げ / Voice Announcements
 
-v1.1.1では、Google Calendarの予定をWindowsの音声合成機能で読み上げることができます。
+Google Calendarの予定をWindowsの音声合成機能で読み上げることができます。
 
-Version 1.1.1 can read Google Calendar events aloud using Windows speech synthesis.
+Google Calendar events can be read aloud using Windows speech synthesis.
 
 設定可能な項目:
 
@@ -78,6 +155,10 @@ Available options include:
 - Scheduled announcement 2
 - Speech check interval
 - Optional "no events" announcement
+
+今日 / 明日などの選択中の項目は、設定画面上で色分けして表示されます。
+
+Selected options such as Today / Tomorrow are visually highlighted in the settings screen.
 
 ## 予定色 / Event Colors
 
@@ -107,7 +188,57 @@ It is stored locally on your PC.
 
 ## Version
 
-Latest: **v1.1.1**
+Latest: **v1.1.2**
+
+### v1.1.2
+
+#### New features / 新機能
+
+- 設定画面を3タブ構成に変更
+- 低解像度PC向けに設定画面をコンパクト化
+- 1日に表示する予定数を1〜3件から選択可能
+- 予定表示数に合わせてカレンダーの高さを自動変更
+- 多言語UIに対応
+  - 日本語
+  - English
+  - Français
+  - Deutsch
+- 選択中の予定表示数を色で表示
+- 選択中の表示言語を色で表示
+- 読み上げ対象の今日 / 明日を色で表示
+- 予定表示数の初期値を1件に変更
+
+- Added a three-tab settings screen
+- Added a compact settings layout for low-resolution displays
+- Added selectable 1–3 events per day
+- Calendar height now adjusts automatically to the selected event count
+- Added multilingual UI support
+  - Japanese
+  - English
+  - French
+  - German
+- Selected event count is visually highlighted
+- Selected display language is visually highlighted
+- Selected Today / Tomorrow speech target is visually highlighted
+- Default events per day changed to 1
+
+#### Improvements / 改善
+
+- フランス語・ドイツ語など長い文字列に合わせて設定画面の配置を調整
+- タブの選択状態を色で分かりやすく表示
+- 設定項目の選択状態を統一した配色で表示
+
+- Improved settings layout for longer French and German text
+- Active tabs are now visually highlighted
+- Selected settings use a consistent highlight style
+
+#### Fixes / 修正
+
+- iCal URLが空の場合でも、以前取得した予定が表示され続ける問題を修正
+- iCal URL未設定時に古い予定キャッシュを自動的にクリアするよう変更
+
+- Fixed an issue where previously downloaded events could remain visible when the iCal URL was empty
+- Cached calendar data is now automatically cleared when no iCal URL is configured
 
 ### v1.1.1
 
