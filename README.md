@@ -211,6 +211,9 @@ https://github.com/kuroken2002/GoogleCalendarMonth-Rainmeter/releases
 This skin retrieves calendar data from the configured iCal URLs.  
 Calendar data is processed locally.
 
+Rainmeterフォーラム：
+
+https://forum.rainmeter.net/viewtopic.php?t=46019&utm_source=chatgpt.com
 ---
 
 ## Author
