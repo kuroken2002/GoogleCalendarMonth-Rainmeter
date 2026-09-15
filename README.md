@@ -6,7 +6,7 @@ Display Google Calendar events on your Windows desktop using iCal / ICS.
 Googleカレンダーの予定をWindowsデスクトップに月間表示する  
 Rainmeter用カレンダースキンです。
 
-![Google Calendar Month for Rainmeter](screenshot.png)
+![Google Calendar Month for Rainmeter](screenshot.jpg)
 
 ---
 
