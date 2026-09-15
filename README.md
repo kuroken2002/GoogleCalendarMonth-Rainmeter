@@ -1,5 +1,48 @@
 # Google Calendar Month for Rainmeter
 
+A monthly Google Calendar skin for Rainmeter.  
+Display Google Calendar events on your Windows desktop using iCal / ICS.
+
+Googleカレンダーの予定をWindowsデスクトップに月間表示する  
+Rainmeter用カレンダースキンです。
+
+![Google Calendar Month for Rainmeter](screenshot.png)
+
+---
+
+## Features
+
+- Google Calendar iCal / ICS integration
+- Monthly calendar view for Rainmeter
+- Shared calendar support
+- Holiday calendars
+- Multilingual UI
+- Voice announcements
+- Configurable event colors
+- Previous / Current / Next month navigation
+
+## Download
+
+Download the latest version from GitHub Releases:
+
+https://github.com/kuroken2002/GoogleCalendarMonth-Rainmeter/releases
+
+## Google Calendar Integration
+
+This Rainmeter calendar skin uses the private iCal / ICS URL provided by Google Calendar.
+
+You can display:
+
+- Main Google Calendar
+- Shared Google Calendar
+- Holidays
+- Recurring events
+- Multi-day events
+
+---
+
+# Google カレンダー月間 for Rainmeter
+
 Googleカレンダーの予定を月間表示するRainmeterスキンです。  
 A Rainmeter skin that displays Google Calendar events in a monthly calendar view.
 
@@ -8,7 +51,8 @@ A Rainmeter skin that displays Google Calendar events in a monthly calendar view
 ## 主な機能 / Features
 
 ### カレンダー表示 / Calendar
-- Google Calendar の iCal URL に対応
+
+- Google Calendar の iCal / ICS URL に対応
 - 月間カレンダー表示
 - 前月 / 今月 / 来月へ移動
 - 日曜・土曜を色分け
@@ -20,13 +64,15 @@ A Rainmeter skin that displays Google Calendar events in a monthly calendar view
 - iCal 更新間隔を 1～60分で設定可能
 
 ### 共有カレンダー / Shared Calendar
+
 - iCal URL を2つ登録可能
-  - [1] メインカレンダー
-  - [2] 共有カレンダー
+  - `[1]` メインカレンダー
+  - `[2]` 共有カレンダー
 - 共有カレンダーを1つ追加表示可能
 - 共有カレンダーURLが空の場合は自動的に無視
 
 ### 祝日 / Holidays
+
 - 祝日表示に対応
 - 初期設定は ON
 - 表示言語に合わせて祝日の国を自動選択
@@ -36,6 +82,7 @@ A Rainmeter skin that displays Google Calendar events in a monthly calendar view
   - Deutsch → Germany
 
 ### 音声読み上げ / Speech
+
 - 起動時に予定を読み上げ
 - 今日 / 明日の予定を読み上げ
 - 定時読み上げを2枠設定可能
@@ -45,6 +92,7 @@ A Rainmeter skin that displays Google Calendar events in a monthly calendar view
 - テスト読み上げボタン
 
 ### 設定画面 / Settings
+
 - タブ形式のコンパクトな設定画面
 - 低解像度PCでも操作しやすいレイアウト
 - 日本語 / English / Français / Deutsch に対応
@@ -53,6 +101,7 @@ A Rainmeter skin that displays Google Calendar events in a monthly calendar view
 - 長い iCal URL を確認しやすい入力欄
 
 ### 更新通知 / Update Notification
+
 - GitHub の最新リリースを定期確認
 - 新しいバージョンがある場合のみ通知
 - 通知をクリックすると GitHub Releases を開く
@@ -63,7 +112,8 @@ A Rainmeter skin that displays Google Calendar events in a monthly calendar view
 ## Features
 
 ### Calendar
-- Supports Google Calendar iCal URLs
+
+- Supports Google Calendar iCal / ICS URLs
 - Monthly calendar view
 - Previous / Current / Next month navigation
 - Separate colors for Sundays and Saturdays
@@ -75,13 +125,15 @@ A Rainmeter skin that displays Google Calendar events in a monthly calendar view
 - Configurable iCal refresh interval from 1 to 60 minutes
 
 ### Shared Calendar
+
 - Two iCal URLs can be registered
-  - [1] Main calendar
-  - [2] Shared calendar
+  - `[1]` Main calendar
+  - `[2]` Shared calendar
 - Supports one additional shared calendar
 - Empty shared calendar URLs are ignored automatically
 
 ### Holidays
+
 - Holiday calendar support
 - Enabled by default
 - Holiday country is selected automatically based on the display language
@@ -91,6 +143,7 @@ A Rainmeter skin that displays Google Calendar events in a monthly calendar view
   - German → Germany
 
 ### Speech
+
 - Read agenda at startup
 - Read today's or tomorrow's schedule
 - Two scheduled speech times
@@ -100,6 +153,7 @@ A Rainmeter skin that displays Google Calendar events in a monthly calendar view
 - Speech test buttons
 
 ### Settings
+
 - Compact tabbed settings screen
 - Improved layout for lower-resolution displays
 - Supports Japanese / English / French / German
@@ -108,6 +162,7 @@ A Rainmeter skin that displays Google Calendar events in a monthly calendar view
 - Larger iCal URL fields for easier editing
 
 ### Update Notification
+
 - Periodically checks the latest GitHub release
 - Notification is shown only when a newer version is available
 - Clicking the notification opens GitHub Releases
@@ -121,6 +176,10 @@ A Rainmeter skin that displays Google Calendar events in a monthly calendar view
 - Rainmeter 4.5 以降
 - Internet connection
 - Windows SAPI（音声読み上げ機能を使用する場合）
+
+Rainmeter:
+
+https://www.rainmeter.net/
 
 ---
 
@@ -148,7 +207,7 @@ A Rainmeter skin that displays Google Calendar events in a monthly calendar view
 
 ## iCal URLについて / About iCal URLs
 
-Google Calendar の「秘密のアドレス（iCal形式）」を使用します。
+Google Calendar の「非公開iCal」を使用します。
 
 共有カレンダーを表示する場合も、Rainmeterからアクセス可能な iCal URL が必要です。
 
@@ -178,6 +237,7 @@ Do not publish them in repositories or screenshots.
 Latest version: **v1.1.3**
 
 ### v1.1.3
+
 - 共有カレンダー1件に対応
 - iCal URLを2つ登録可能
 - 日本 / アメリカ / フランス / ドイツの祝日表示
@@ -187,6 +247,7 @@ Latest version: **v1.1.3**
 - 設定画面のレイアウト改善
 
 ### v1.1.2
+
 - 多言語表示対応
 - 1日の予定表示数を1～3件から選択可能
 - 設定画面をタブ形式に変更
@@ -198,7 +259,20 @@ Latest version: **v1.1.3**
 ## Download
 
 GitHub Releases:
+
 https://github.com/kuroken2002/GoogleCalendarMonth-Rainmeter/releases
+
+Current release:
+
+https://github.com/kuroken2002/GoogleCalendarMonth-Rainmeter/releases/tag/v1.1.3
+
+---
+
+## Rainmeter Forum
+
+Google Calendar Month for Rainmeter:
+
+https://forum.rainmeter.net/viewtopic.php?t=46019
 
 ---
 
@@ -207,14 +281,21 @@ https://github.com/kuroken2002/GoogleCalendarMonth-Rainmeter/releases
 このスキンは、設定された iCal URL からカレンダーデータを取得します。  
 取得したデータはローカルで処理されます。
 
+iCal URL には個人情報が含まれる場合があります。  
+公開リポジトリ、フォーラム投稿、スクリーンショットなどに掲載しないでください。
+
 This skin retrieves calendar data from the configured iCal URLs.  
 Calendar data is processed locally.
 
-Rainmeterフォーラム：
-https://forum.rainmeter.net/viewtopic.php?t=46019&utm_source=chatgpt.com
+iCal URLs may contain private information.  
+Do not publish them in repositories, forum posts, or screenshots.
 
 ---
 
 ## Author
 
 kuroken2002
+
+GitHub:
+
+https://github.com/kuroken2002/GoogleCalendarMonth-Rainmeter
