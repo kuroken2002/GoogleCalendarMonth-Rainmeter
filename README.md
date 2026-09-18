@@ -107,6 +107,12 @@ A Rainmeter skin that displays Google Calendar events in a monthly calendar view
 - 通知をクリックすると GitHub Releases を開く
 - 自動更新は行いません
 
+### 改良・派生について
+
+このプロジェクトの解析・改良・派生開発は歓迎します。
+バグ修正、改善、新しい機能などを作成した場合は、GitHub Issue、Pull Request、または Rainmeter Forum を通じて本家にも知らせてもらえると助かります。
+派生版の作成も歓迎します。多くの利用者に役立つ改善であれば、本家への取り込みも検討します。
+
 ---
 
 ## Features
@@ -168,7 +174,11 @@ A Rainmeter skin that displays Google Calendar events in a monthly calendar view
 - Clicking the notification opens GitHub Releases
 - Updates are not installed automatically
 
----
+### Contributions / 改良・派生について
+
+You are welcome to study, modify, improve, and build upon this project.
+If you create bug fixes, improvements, or useful new features based on this project, please let the original project know through a GitHub Issue, Pull Request, or the Rainmeter Forum.
+Forks and derivative works are welcome. If your improvement may be useful to other users, I would be happy to consider bringing it back into the original project.
 
 ## 必要環境 / Requirements
 
