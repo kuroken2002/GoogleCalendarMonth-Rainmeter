@@ -20,6 +20,7 @@ Rainmeter用カレンダースキンです。
 - Voice announcements
 - Configurable event colors
 - Previous / Current / Next month navigation
+- Up to 5 events per day
 
 ## Download
 
@@ -56,7 +57,7 @@ A Rainmeter skin that displays Google Calendar events in a monthly calendar view
 - 月間カレンダー表示
 - 前月 / 今月 / 来月へ移動
 - 日曜・土曜を色分け
-- 1日に表示する予定数を 1～3件から選択
+- 1日に表示する予定数を 1～5件から選択
 - 予定数に合わせてカレンダーの高さを自動調整
 - 予定ごとの背景色表示
 - 複数日にまたがる予定を連続した帯で表示
@@ -65,11 +66,10 @@ A Rainmeter skin that displays Google Calendar events in a monthly calendar view
 
 ### 共有カレンダー / Shared Calendar
 
-- iCal URL を2つ登録可能
-  - `[1]` メインカレンダー
-  - `[2]` 共有カレンダー
+- メインカレンダーと共有カレンダーの2つのiCal URLを登録可能
 - 共有カレンダーを1つ追加表示可能
 - 共有カレンダーURLが空の場合は自動的に無視
+- メイン・共有カレンダーはそれぞれ表示ON / OFFを設定可能
 
 ### 祝日 / Holidays
 
@@ -90,10 +90,19 @@ A Rainmeter skin that displays Google Calendar events in a monthly calendar view
 - 予定が無い場合の読み上げに対応
 - 判定間隔を設定可能
 - テスト読み上げボタン
+- メインカレンダーと共有カレンダーの両方を読み上げ可能
+- 読み上げ対象をメイン・共有それぞれ個別にON / OFF可能
 
 ### 設定画面 / Settings
 
 - タブ形式のコンパクトな設定画面
+- メインiCal設定を「基本設定」タブへ統合
+- 「メイン」タブを廃止し、4タブ構成に整理
+  - 基本設定
+  - 共有
+  - 読み上げ
+  - 定時読み上げ
+- iCal URLの `[1]` / `[2]` 表記を削除
 - 低解像度PCでも操作しやすいレイアウト
 - 日本語 / English / Français / Deutsch に対応
 - 選択中の設定をボタン色で表示
@@ -109,8 +118,8 @@ A Rainmeter skin that displays Google Calendar events in a monthly calendar view
 
 ### 改良・派生について / Contributions
 
-このプロジェクトの解析・改良・派生開発は歓迎します。
-バグ修正、改善、新しい機能などを作成した場合は、GitHub Issue、Pull Request、または Rainmeter Forum を通じて本家にも知らせてもらえると助かります。
+このプロジェクトの解析・改良・派生開発は歓迎します。  
+バグ修正、改善、新しい機能などを作成した場合は、GitHub Issue、Pull Request、または Rainmeter Forum を通じて本家にも知らせてもらえると助かります。  
 派生版の作成も歓迎します。多くの利用者に役立つ改善であれば、本家への取り込みも検討します。
 
 ---
@@ -123,7 +132,7 @@ A Rainmeter skin that displays Google Calendar events in a monthly calendar view
 - Monthly calendar view
 - Previous / Current / Next month navigation
 - Separate colors for Sundays and Saturdays
-- Configurable number of events per day: 1, 2, or 3
+- Configurable number of events per day: 1 to 5
 - Calendar height automatically adjusts to the selected event count
 - Optional event background colors
 - Continuous bands for multi-day events
@@ -132,11 +141,10 @@ A Rainmeter skin that displays Google Calendar events in a monthly calendar view
 
 ### Shared Calendar
 
-- Two iCal URLs can be registered
-  - `[1]` Main calendar
-  - `[2]` Shared calendar
+- Main and shared iCal URLs can be registered
 - Supports one additional shared calendar
 - Empty shared calendar URLs are ignored automatically
+- Main and shared calendar display can be enabled or disabled independently
 
 ### Holidays
 
@@ -157,10 +165,20 @@ A Rainmeter skin that displays Google Calendar events in a monthly calendar view
 - Optional speech when there are no events
 - Configurable check interval
 - Speech test buttons
+- Supports voice announcements for both main and shared calendars
+- Main and shared calendars can be individually enabled or disabled for voice announcements
 
 ### Settings
 
 - Compact tabbed settings screen
+- Main iCal settings moved into the Basic Settings tab
+- Separate Main tab removed
+- Settings reorganized into four tabs
+  - Basic Settings
+  - Shared
+  - Speech
+  - Scheduled Speech
+- Removed the `[1]` and `[2]` labels from the iCal URL fields
 - Improved layout for lower-resolution displays
 - Supports Japanese / English / French / German
 - Selected settings are visually highlighted
@@ -176,9 +194,11 @@ A Rainmeter skin that displays Google Calendar events in a monthly calendar view
 
 ### Contributions
 
-You are welcome to study, modify, improve, and build upon this project.
-If you create bug fixes, improvements, or useful new features based on this project, please let the original project know through a GitHub Issue, Pull Request, or the Rainmeter Forum.
+You are welcome to study, modify, improve, and build upon this project.  
+If you create bug fixes, improvements, or useful new features based on this project, please let the original project know through a GitHub Issue, Pull Request, or the Rainmeter Forum.  
 Forks and derivative works are welcome. If your improvement may be useful to other users, I would be happy to consider bringing it back into the original project.
+
+---
 
 ## 必要環境 / Requirements
 
@@ -198,8 +218,8 @@ https://www.rainmeter.net/
 1. `.rmskin` をインストールします。
 2. Google Calendar の設定から iCal URL を取得します。
 3. Rainmeter の設定画面を開きます。
-4. `[1]` にメインカレンダーの iCal URL を入力します。
-5. 共有カレンダーを使う場合は `[2]` に共有カレンダーの iCal URL を入力します。
+4. 「基本設定」タブにメインカレンダーの iCal URL を入力します。
+5. 共有カレンダーを使う場合は「共有」タブに共有カレンダーの iCal URL を入力します。
 6. URL入力後、Enterキーで確定します。
 7. 「保存して閉じる」を押します。
 
@@ -208,8 +228,8 @@ https://www.rainmeter.net/
 1. Install the `.rmskin` package.
 2. Get your iCal URL from Google Calendar.
 3. Open the Rainmeter settings screen.
-4. Enter the main calendar iCal URL in `[1]`.
-5. If you use a shared calendar, enter its iCal URL in `[2]`.
+4. Enter the main calendar iCal URL in the Basic Settings tab.
+5. If you use a shared calendar, enter its iCal URL in the Shared tab.
 6. Press Enter after entering each URL.
 7. Click "Save and Close".
 
@@ -244,7 +264,17 @@ Do not publish them in repositories or screenshots.
 
 ## バージョン / Version
 
-Latest version: **v1.1.3**
+Latest version: **v1.1.4**
+
+### v1.1.4
+
+- メインiCal設定を「基本設定」タブへ統合
+- 「メイン」タブを廃止
+- iCal URLの `[1]` / `[2]` 表記を削除
+- 1日に表示できる予定数を最大5件へ拡張
+- メイン・共有カレンダーの両方を読み上げ可能に変更
+- 読み上げ対象をメイン・共有それぞれ個別にON / OFF可能
+- 設定画面のレイアウトを整理
 
 ### v1.1.3
 
@@ -274,7 +304,7 @@ https://github.com/kuroken2002/GoogleCalendarMonth-Rainmeter/releases
 
 Current release:
 
-https://github.com/kuroken2002/GoogleCalendarMonth-Rainmeter/releases/tag/v1.1.3
+https://github.com/kuroken2002/GoogleCalendarMonth-Rainmeter/releases/tag/v1.1.4
 
 ---
 
