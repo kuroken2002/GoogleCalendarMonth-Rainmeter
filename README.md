@@ -42,6 +42,14 @@ You can display:
 
 ---
 
+## 💬 Feedback / 感想・使用報告
+
+Tried the skin? Even a quick “It works!” is welcome in the [feedback thread](https://github.com/kuroken2002/GoogleCalendarMonth-Rainmeter/discussions/2). Feel free to share your impressions, report a problem, or suggest an idea.
+
+使ってみたら、[感想・使用報告の掲示板](https://github.com/kuroken2002/GoogleCalendarMonth-Rainmeter/discussions/2)へお気軽にどうぞ。「動いたよ」のひとことだけでもうれしいです。感想や不具合、ご要望も歓迎します。
+
+---
+
 # Google カレンダー月間 for Rainmeter
 
 Googleカレンダーの予定を月間表示するRainmeterスキンです。  
