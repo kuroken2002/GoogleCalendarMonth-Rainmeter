@@ -6,7 +6,7 @@ Display Google Calendar events on your Windows desktop using iCal / ICS.
 Googleカレンダーの予定をWindowsデスクトップに月間表示する  
 Rainmeter用カレンダースキンです。
 
-![Google Calendar Month for Rainmeter](screenshot.jpg)
+![Google Calendar Month for Rainmeter](Google_Calendar_Month_v115.png)
 
 ---
 
@@ -272,7 +272,19 @@ Do not publish them in repositories or screenshots.
 
 ## バージョン / Version
 
-Latest version: **v1.1.4**
+Latest version: **v1.1.5**
+
+### v1.1.5
+
+- 7日分の天気アイコン表示に対応（初期状態はOFF）
+- 設定画面に「現在地を取得」ボタンを追加
+- 初回設定用の現在地取得案内を追加
+- 緯度・経度の手動入力に対応
+- 天気取得失敗時の再試行・代替取得に対応
+- 天気キャッシュを利用した表示に対応
+- Weather display is OFF by default.
+- Added a “Get current location” button using approximate IP-based geolocation.
+- Added manual latitude and longitude input.
 
 ### v1.1.4
 
@@ -312,7 +324,7 @@ https://github.com/kuroken2002/GoogleCalendarMonth-Rainmeter/releases
 
 Current release:
 
-https://github.com/kuroken2002/GoogleCalendarMonth-Rainmeter/releases/tag/v1.1.4
+https://github.com/kuroken2002/GoogleCalendarMonth-Rainmeter/releases/tag/v1.1.5
 
 ---
 
