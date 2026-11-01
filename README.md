@@ -1,455 +1,337 @@
-## Google Calendar Month for Rainmeter
-![Google Calendar Month for Rainmeter](Google_Calendar_Month_v115.png)
+# Google Calendar Month for Rainmeter
+
+Googleカレンダーの予定を、Windowsデスクトップに月間表示するRainmeterスキンです。  
+A monthly Google Calendar skin for Rainmeter using iCal / ICS.
+
+<p align="center">
+  <a href="Google_Calendar_Month_v115.png">
+    <img src="Google_Calendar_Month_v115.png" alt="Google Calendar Month for Rainmeter" width="100%">
+  </a>
+</p>
+
+> 画像をクリックすると原寸で表示できます。
+
+## ダウンロード
+
+**最新バージョン：v1.1.7**
 
-A monthly Google Calendar skin for Rainmeter.
-Display Google Calendar events on your Windows desktop using iCal / ICS.
+- [最新版をダウンロード](https://github.com/kuroken2002/GoogleCalendarMonth-Rainmeter/releases/latest)
+- [すべてのリリース](https://github.com/kuroken2002/GoogleCalendarMonth-Rainmeter/releases)
+- [Rainmeter公式サイト](https://www.rainmeter.net/)
 
-Googleカレンダーの予定をWindowsデスクトップに月間表示する
-Rainmeter用カレンダースキンです。
+## 目次
 
-💬 Feedback / 感想・使用報告
+- [主な機能](#主な機能)
+- [必要環境](#必要環境)
+- [インストール](#インストール)
+- [初期設定](#初期設定)
+- [天気表示](#天気表示)
+- [iCal URLとプライバシー](#ical-urlとプライバシー)
+- [対応言語](#対応言語)
+- [更新履歴](#更新履歴)
+- [フィードバック](#フィードバック)
+- [English](#english)
 
-Tried the skin? Even a quick “It works!” is welcome in the feedback thread. Feel free to share your impressions, report a problem, or suggest an idea.
+---
 
-使ってみたら、感想・使用報告の掲示板へお気軽にどうぞ。「動いたよ」のひとことだけでもうれしいです。感想や不具合、ご要望も歓迎します。
+## 主な機能
 
-Google カレンダー月間 for Rainmeter
+### カレンダー
 
-Googleカレンダーの予定を月間表示するRainmeterスキンです。
-A Rainmeter skin that displays Google Calendar events in a monthly calendar view.
+- Google Calendarの非公開iCal / ICS URLに対応
+- 月間カレンダー表示
+- 前月・今月・来月へ移動
+- 週の開始曜日を日曜始まり・月曜始まりから選択
+- 日曜日・土曜日を色分け
+- 1日に表示する予定数を1～5件から選択
+- 予定数に合わせてカレンダーの高さを自動調整
+- 予定ごとの背景色表示
+- 複数日にまたがる予定を連続した帯で表示
+- BYDAYを含む月次繰り返し予定に対応
+- iCal更新間隔を1～60分で設定
 
-#主な機能 / Features
+### 共有カレンダー・祝日
 
-カレンダー表示 / Calendar
+- メインと共有、2つのiCal URLを登録可能
+- メイン・共有カレンダーを個別にON / OFF
+- 共有カレンダーURLが空の場合は自動的に無視
+- 祝日表示は初期状態でON
+- 表示言語に合わせて祝日の国を自動選択
 
-Google Calendar の iCal / ICS URL に対応
+| 表示言語 | 祝日 |
+|---|---|
+| 日本語 | 日本 |
+| English | United States |
+| Français | France |
+| Deutsch | Germany |
 
-月間カレンダー表示
+### 音声読み上げ
 
-前月 / 今月 / 来月へ移動
+- 起動時に予定を読み上げ
+- 今日・明日の予定に対応
+- 定時読み上げを2枠設定
+- 読み上げ前に現在時刻を案内
+- 予定がない場合の読み上げに対応
+- 判定間隔を設定可能
+- テスト読み上げボタン
+- メイン・共有カレンダーを読み上げ対象として個別にON / OFF
 
-週の開始曜日を日曜始まり・月曜始まりから選択
+### 設定画面
 
-日曜・土曜を色分け
+設定画面は、次の4タブで構成されています。
 
-1日に表示する予定数を 1～5件から選択
+| タブ | 設定内容 |
+|---|---|
+| iCal | メイン・共有カレンダー、祝日、天気、緯度・経度 |
+| 基本設定 | 更新間隔、表示件数、表示言語、週の開始曜日 |
+| 配色 | カレンダーと予定の表示色 |
+| 読み上げ | 読み上げ対象、起動時・定時読み上げ、予定がない場合の動作 |
 
-予定数に合わせてカレンダーの高さを自動調整
+iCal URLは、入力確定後に設定画面上でマスク表示されます。
 
-予定ごとの背景色表示
+### 天気・更新通知
 
-複数日にまたがる予定を連続した帯で表示
+- Open-Meteoによる7日分の天気表示
+- 天気表示は初期状態でOFF
+- 緯度・経度を手動入力
+- 通信失敗時は取得済みの予報を最大6時間保持
+- GitHubの最新リリースを定期確認
+- 新しいバージョンがある場合のみ通知
+- 通知をクリックするとGitHub Releasesを表示
+- 自動更新は行いません
 
-BYDAY を含む月次繰り返し予定に対応
+---
 
-iCal 更新間隔を 1～60分で設定可能
+## 必要環境
 
-共有カレンダー / Shared Calendar
+- Windows 10 / 11
+- Rainmeter 4.5.26以降
+- インターネット接続
+- Windows SAPI（音声読み上げを使用する場合）
 
-メインカレンダーと共有カレンダーの2つのiCal URLを登録可能
+## インストール
 
-共有カレンダーを1つ追加表示可能
+### `.rmskin`を使用する場合
 
-共有カレンダーURLが空の場合は自動的に無視
+1. [GitHub Releases](https://github.com/kuroken2002/GoogleCalendarMonth-Rainmeter/releases/latest)から`Google.Calendar.Month_1.1.7.rmskin`をダウンロードします。
+2. ダウンロードしたファイルを実行します。
+3. Rainmeter Skin Installerの案内に従ってインストールします。
 
-メイン・共有カレンダーはそれぞれ表示ON / OFFを設定可能
+### 新規・手動インストール
 
-祝日 / Holidays
+1. `GoogleCalendarMonth_1.1.7.zip`を展開します。
+2. ZIP内の`GoogleCalendarMonth`フォルダーを`ドキュメント\Rainmeter\Skins`へコピーします。
+3. Rainmeterの管理画面で「すべて更新」を実行します。
+4. `GoogleCalendarMonth\GoogleCalendarMonth.ini`を読み込みます。
 
-祝日表示に対応
+### 既存設定を維持して更新
 
-初期設定は ON
+1. 念のため、既存の`GoogleCalendarMonth`フォルダーをバックアップします。
+2. `GoogleCalendarMonth_1.1.7_upgrade.zip`を展開します。
+3. 既存の`GoogleCalendarMonth`フォルダーを削除せず、そのまま上書きします。
+4. Rainmeterで「すべて更新」を実行します。
 
-表示言語に合わせて祝日の国を自動選択
+## 初期設定
 
-日本語 → 日本
+1. Google Calendarの設定から「非公開iCal」のURLを取得します。
+2. RainmeterでGoogle Calendar Monthの設定画面を開きます。
+3. 「iCal」タブにメインカレンダーのiCal URLを入力します。
+4. 共有カレンダーを使う場合は、同じタブに共有カレンダーのiCal URLを入力します。
+5. URLを入力したら、Enterキーで確定します。
+6. 「基本設定」タブで表示言語や週の開始曜日を選択します。
+7. 「保存して閉じる」を押します。
 
-English → United States
+## 天気表示
 
-Français → France
+天気表示は初期状態でOFFです。
 
-Deutsch → Germany
+1. 「iCal」タブで天気表示をONにします。
+2. 表示したい地域の緯度・経度を入力します。
+3. 「保存して閉じる」を押します。
 
-音声読み上げ / Speech
+- 初期座標は東京駅付近です。
+- v1.1.5にあった「現在地を取得」ボタンは含まれません。
+- 今日のアイコンには現在の天気情報を使用し、以降は日別予報を表示します。
+- 天気情報の取得に失敗した場合、最後に取得した予報を最大6時間使用します。
 
-起動時に予定を読み上げ
+## iCal URLとプライバシー
 
-今日 / 明日の予定を読み上げ
+Google Calendarの「非公開iCal」を使用します。共有カレンダーにも、RainmeterからアクセスできるiCal URLが必要です。
 
-定時読み上げを2枠設定可能
+> [!CAUTION]
+> iCal URLには個人情報が含まれる場合があります。設定画面上ではマスクされますが、`@Resources/Variables.inc`には平文で保存されます。リポジトリ、フォーラム投稿、スクリーンショットなどに掲載しないでください。
 
-読み上げ前に現在時刻を案内可能
+取得したカレンダーデータはローカルで処理されます。
 
-予定が無い場合の読み上げに対応
+## 対応言語
 
-判定間隔を設定可能
+- 日本語
+- English
+- Français
+- Deutsch
 
-テスト読み上げボタン
+---
 
-メインカレンダーと共有カレンダーの両方を読み上げ可能
+## 更新履歴
 
-読み上げ対象をメイン・共有それぞれ個別にON / OFF可能
+### v1.1.7
 
-設定画面 / Settings
+- 週の開始曜日を日曜始まり・月曜始まりから選択可能
+- 月曜始まりでも日曜日・土曜日の文字色を正しく表示
+- 初回起動時の表示言語を日本語に設定
+- 設定ファイルがない場合の既定値処理を追加
+- `Variables.inc`がない場合でもiCal URLと各種設定を新規保存可能
+- メイン・共有iCal、天気、配色、読み上げ、週開始曜日の保存処理を改善
 
-4つのタブ：iCal / 基本設定 / 配色 / 読み上げ
+<details>
+<summary><strong>過去の更新履歴を表示</strong></summary>
 
-iCalタブでメイン・共有カレンダー、祝日、天気、緯度・経度を設定
+### v1.1.6
 
-iCal URLは入力後に画面上でマスク表示
+- 設定画面を「iCal / 基本設定 / 配色 / 読み上げ」の4タブに整理
+- メイン・共有iCal URLを入力後に画面上でマスク表示
+- 今日の天気は現在の情報、以降は日別予報を表示
+- 天気取得に失敗した場合は予報を最大6時間保持
+- 設定画面の重なりと設定保存後の天気表示を修正
+- テスト用の診断ログ書き出しを削除
 
-基本設定タブで更新間隔、表示件数、表示言語、週の開始曜日を設定
+### v1.1.5
 
-読み上げタブで対象、起動時、定時、予定が無い場合の動作を設定
+- 7日分の天気アイコン表示に対応（初期状態はOFF）
+- 「現在地を取得」ボタンと初回設定案内を追加
+- 緯度・経度の手動入力に対応
+- 天気取得失敗時の再試行・代替取得に対応
+- 天気キャッシュを利用した表示に対応
 
-日本語 / English / Français / Deutsch に対応
+### v1.1.4
 
-更新通知 / Update Notification
+- メインiCal設定を「基本設定」タブへ統合
+- 1日に表示できる予定数を最大5件へ拡張
+- メイン・共有カレンダーの両方を読み上げ可能に変更
+- 読み上げ対象を個別にON / OFF可能
+- 設定画面のレイアウトを整理
 
-GitHub の最新リリースを定期確認
+### v1.1.3
 
-新しいバージョンがある場合のみ通知
+- 共有カレンダー1件に対応
+- 日本・アメリカ・フランス・ドイツの祝日表示
+- 表示言語に応じた祝日の自動選択
+- 更新通知機能を追加
+- iCal URL入力欄と設定画面のレイアウトを改善
 
-通知をクリックすると GitHub Releases を開く
+### v1.1.2
 
-自動更新は行いません
+- 多言語表示に対応
+- 1日の予定表示数を1～3件から選択可能
+- 設定画面をタブ形式に変更
+- 低解像度PC向けに設定画面を改善
+- 空のiCal URL設定時に古いキャッシュを削除
 
-#改良・派生について / Contributions
+</details>
 
-このプロジェクトの解析・改良・派生開発は歓迎します。
-バグ修正、改善、新しい機能などを作成した場合は、GitHub Issue、Pull Request、または Rainmeter Forum を通じて本家にも知らせてもらえると助かります。
-派生版の作成も歓迎します。多くの利用者に役立つ改善であれば、本家への取り込みも検討します。
+## フィードバック
 
-#Features
+「動いたよ」のひとことだけでも歓迎です。感想、設定で困ったこと、不具合、ご要望をお寄せください。
 
-Calendar
+- [感想・使用報告（GitHub Discussions）](https://github.com/kuroken2002/GoogleCalendarMonth-Rainmeter/discussions/2)
+- [Rainmeter Forum](https://forum.rainmeter.net/viewtopic.php?t=46019)
 
-Supports Google Calendar iCal / ICS URLs
+## 改良・派生について
 
-Monthly calendar view
+このプロジェクトの解析、改良、派生開発を歓迎します。バグ修正、改善、新機能を作成した場合は、GitHub Issue、Pull Request、またはRainmeter Forumを通じてお知らせください。多くの利用者に役立つ改善であれば、本家への取り込みも検討します。
 
-Previous / Current / Next month navigation
+---
 
-Select Sunday or Monday as the start of the week
+## English
 
-Separate colors for Sundays and Saturdays
+<details>
+<summary><strong>Show English documentation</strong></summary>
 
-Configurable number of events per day: 1 to 5
+### Overview
 
-Calendar height automatically adjusts to the selected event count
+Google Calendar Month is a Rainmeter skin that displays Google Calendar events in a monthly calendar view using private iCal / ICS URLs.
 
-Optional event background colors
+### Features
 
-Continuous bands for multi-day events
+- Monthly calendar with previous, current, and next month navigation
+- Main and shared Google Calendar support
+- Sunday-first or Monday-first week layout
+- One to five events per day with automatic height adjustment
+- Sunday and Saturday color highlighting
+- Event background colors and continuous multi-day event bands
+- Monthly recurring events, including BYDAY rules
+- Holiday calendars for Japan, the United States, France, and Germany
+- Japanese, English, French, and German interfaces
+- Startup and two scheduled voice announcements
+- Independent voice targets for main and shared calendars
+- Optional seven-day weather icons using Open-Meteo
+- New-release notifications without automatic installation
 
-Supports monthly recurring events including BYDAY rules
+### Requirements
 
-Configurable iCal refresh interval from 1 to 60 minutes
+- Windows 10 / 11
+- Rainmeter 4.5.26 or later
+- Internet connection
+- Windows SAPI for voice announcements
 
-Shared Calendar
+### Installation
 
-Main and shared iCal URLs can be registered
+#### Rainmeter package
 
-Supports one additional shared calendar
+1. Download `Google.Calendar.Month_1.1.7.rmskin` from [GitHub Releases](https://github.com/kuroken2002/GoogleCalendarMonth-Rainmeter/releases/latest).
+2. Run the downloaded package.
+3. Follow the Rainmeter Skin Installer instructions.
 
-Empty shared calendar URLs are ignored automatically
+#### New manual installation
 
-Main and shared calendar display can be enabled or disabled independently
+1. Extract `GoogleCalendarMonth_1.1.7.zip`.
+2. Copy the `GoogleCalendarMonth` folder to `Documents\Rainmeter\Skins`.
+3. Select **Refresh all** in Rainmeter Manage.
+4. Load `GoogleCalendarMonth\GoogleCalendarMonth.ini`.
 
-Holidays
+#### Update while preserving settings
 
-Holiday calendar support
+1. Back up the existing `GoogleCalendarMonth` folder.
+2. Extract `GoogleCalendarMonth_1.1.7_upgrade.zip`.
+3. Copy it over the existing folder without deleting that folder first.
+4. Select **Refresh all** in Rainmeter Manage.
 
-Enabled by default
+### Setup
 
-Holiday country is selected automatically based on the display language
+1. Get the **Secret address in iCal format** from Google Calendar.
+2. Open the skin settings.
+3. Enter the main calendar URL in the **iCal** tab.
+4. Enter a shared calendar URL in the same tab if needed.
+5. Press Enter after entering each URL.
+6. Select the language and week start in **Basic Settings**.
+7. Click **Save and Close**.
 
-Japanese → Japan
+### Weather
 
-English → United States
+Weather is OFF by default. Enable it in the iCal tab and enter latitude and longitude manually. The default coordinates are near Tokyo Station. Today's icon uses the current condition, while later days use the daily forecast. The last forecast remains available for up to six hours after a failed refresh.
 
-French → France
+### Privacy
 
-German → Germany
+> [!CAUTION]
+> iCal URLs may contain private information. They are masked on screen but stored as plain text in `@Resources/Variables.inc`. Do not publish them in repositories, forum posts, or screenshots.
 
-Speech
-
-Read agenda at startup
-
-Read today's or tomorrow's schedule
-
-Two scheduled speech times
-
-Optional current time announcement before scheduled agenda
-
-Optional speech when there are no events
-
-Configurable check interval
-
-Speech test buttons
-
-Supports voice announcements for both main and shared calendars
-
-Main and shared calendars can be individually enabled or disabled for voice announcements
-
-Settings
-
-Four tabs: iCal, Basic, Colors, and Speech
-
-Configure calendars, holidays, weather, and coordinates in iCal
-
-iCal URLs are masked on screen after entry
-
-Set intervals, daily event count, language, and week start in Basic
-
-Configure speech sources, startup announcements, schedules, and empty-day announcements in Speech
-
-Supports Japanese / English / French / German
-
-Update Notification
-
-Periodically checks the latest GitHub release
-
-Notification is shown only when a newer version is available
-
-Clicking the notification opens GitHub Releases
-
-Updates are not installed automatically
-
-#Contributions
-
-You are welcome to study, modify, improve, and build upon this project.
-If you create bug fixes, improvements, or useful new features based on this project, please let the original project know through a GitHub Issue, Pull Request, or the Rainmeter Forum.
-Forks and derivative works are welcome. If your improvement may be useful to other users, I would be happy to consider bringing it back into the original project.
-
-#必要環境 / Requirements
-
-Windows 10 / 11
-
-Rainmeter 4.5.26 以降
-
-Internet connection
-
-Windows SAPI（音声読み上げ機能を使用する場合）
-
-Rainmeter:
-
-https://www.rainmeter.net/
-
-#手動インストール / Manual Installation
-
-新規・手動インストールでは、GoogleCalendarMonth_1.1.7.zip を展開し、ZIP内の GoogleCalendarMonth フォルダーを ドキュメント\Rainmeter\Skins へコピーします。Rainmeterの管理画面で「すべて更新」を実行し、GoogleCalendarMonth\GoogleCalendarMonth.ini を読み込んでください。
-
-既存設定を維持する更新では、GoogleCalendarMonth_1.1.7_upgrade.zip を既存の GoogleCalendarMonth フォルダーへ、フォルダーを削除せずに上書きしてください。
-
-For a new manual installation, extract GoogleCalendarMonth_1.1.7.zip and copy the GoogleCalendarMonth folder to Documents\Rainmeter\Skins. Select Refresh all in Rainmeter Manage, then load GoogleCalendarMonth\GoogleCalendarMonth.ini.
-
-To preserve existing settings, copy GoogleCalendarMonth_1.1.7_upgrade.zip over the existing GoogleCalendarMonth folder without deleting the existing folder first.
-
-#セットアップ / Setup
-
-.rmskin をインストールします。
-
-Google Calendar の設定から iCal URL を取得します。
-
-Rainmeter の設定画面を開きます。
-
-「iCal」タブにメインカレンダーの iCal URL を入力します。
-
-共有カレンダーを使う場合は、同じ「iCal」タブに共有カレンダーの iCal URL を入力します。
-
-URL入力後、Enterキーで確定します。
-
-「基本設定」タブで週の開始曜日を選択します。
-
-「保存して閉じる」を押します。
-
-#Setup
-
-Install the .rmskin package.
-
-Get your iCal URL from Google Calendar.
-
-Open the Rainmeter settings screen.
-
-Enter the main calendar iCal URL in the iCal tab.
-
-If you use a shared calendar, enter its iCal URL in the same tab.
-
-Press Enter after entering each URL.
-
-Select Sunday or Monday as the start of the week in the Basic Settings tab.
-
-Click "Save and Close".
-
-iCal URLについて / About iCal URLs
-
-Google Calendar の「非公開iCal」を使用します。
-
-共有カレンダーを表示する場合も、Rainmeterからアクセス可能な iCal URL が必要です。
-
-iCal URL には個人情報を含む場合があります。
-公開リポジトリやスクリーンショットには貼らないでください。
-
-Use the "Secret address in iCal format" provided by Google Calendar.
-
-Shared calendars also require an iCal URL that Rainmeter can access.
-
-iCal URLs may contain private information.
-Do not publish them in repositories or screenshots.
-
-天気 / Weather
-
-天気は初期状態で OFF です。「iCal」タブで ON にし、緯度・経度を入力してください。初期座標は東京駅付近です。v1.1.5 の「現在地を取得」ボタンは含まれません。今日の天気には現在の情報を使い、通信に失敗した場合は取得済みの予報を最大6時間保持します。
-
-Weather is OFF by default. Enable it in the iCal tab and enter latitude and longitude manually. The default coordinates are near Tokyo Station. The v1.1.5 “Get current location” button is not included. Today's icon uses the current condition; the last forecast remains available for up to six hours after a failed refresh.
-
-対応言語 / Supported Languages
-
-日本語 / Japanese
-
-English
-
-Français / French
-
-Deutsch / German
-
-バージョン / Version
-
-Latest version: v1.1.7
-
-#v1.1.7
-
-週の開始曜日を日曜始まり・月曜始まりから選択可能
-
-月曜始まりでも日曜日・土曜日の文字色を正しく表示
-
-初回起動時の表示言語を日本語に設定
-
-設定ファイルがない場合の既定値処理を追加
-
-Variables.inc がない場合でもiCal URLと各種設定を新規保存可能
-
-メイン・共有iCal、天気、配色、読み上げ、週開始曜日の保存処理を改善
-
-Added Sunday-first and Monday-first week selection.
-
-Added safe defaults and settings-file creation when configuration files are missing.
-
-#v1.1.6
-
-設定画面を iCal / 基本設定 / 配色 / 読み上げの4タブに整理
-
-メイン・共有 iCal URL を入力後に画面上でマスク表示
-
-今日の天気は現在の情報、以降は日別予報を表示
-
-天気取得に失敗した場合は予報を最大6時間保持
-
-設定画面の重なりと設定保存後の天気表示を修正
-
-テスト用の診断ログ書き出しを削除
-
-Reorganized Settings, masked iCal URLs, improved weather, and fixed window layering.
-
-#v1.1.5
-
-7日分の天気アイコン表示に対応（初期状態はOFF）
-
-設定画面に「現在地を取得」ボタンを追加
-
-初回設定用の現在地取得案内を追加
-
-緯度・経度の手動入力に対応
-
-天気取得失敗時の再試行・代替取得に対応
-
-天気キャッシュを利用した表示に対応
-
-Weather display is OFF by default.
-
-Added a “Get current location” button using approximate IP-based geolocation.
-
-Added manual latitude and longitude input.
-
-#v1.1.4
-
-メインiCal設定を「基本設定」タブへ統合
-
-「メイン」タブを廃止
-
-iCal URLの [1] / [2] 表記を削除
-
-1日に表示できる予定数を最大5件へ拡張
-
-メイン・共有カレンダーの両方を読み上げ可能に変更
-
-読み上げ対象をメイン・共有それぞれ個別にON / OFF可能
-
-設定画面のレイアウトを整理
-
-#v1.1.3
-
-共有カレンダー1件に対応
-
-iCal URLを2つ登録可能
-
-日本 / アメリカ / フランス / ドイツの祝日表示
-
-表示言語に応じた祝日の自動選択
-
-更新通知機能
-
-iCal URL入力欄の改善
-
-設定画面のレイアウト改善
-
-#v1.1.2
-
-多言語表示対応
-
-1日の予定表示数を1～3件から選択可能
-
-設定画面をタブ形式に変更
-
-低解像度PC向けに設定画面を改善
-
-空のiCal URL設定時に古いキャッシュを削除
-
-Download
-
-GitHub Releases:
-
-https://github.com/kuroken2002/GoogleCalendarMonth-Rainmeter/releases
-
-Current release:
-
-https://github.com/kuroken2002/GoogleCalendarMonth-Rainmeter/releases/latest
-
-Rainmeter Forum
-
-Google Calendar Month for Rainmeter:
-
-https://forum.rainmeter.net/viewtopic.php?t=46019
-
-#Privacy
-
-このスキンは、設定された iCal URL からカレンダーデータを取得します。
-取得したデータはローカルで処理されます。
-
-iCal URL は画面上ではマスクされますが、@Resources/Variables.inc に平文で保存されます。
-公開リポジトリ、フォーラム投稿、スクリーンショットなどに掲載しないでください。
-
-This skin retrieves calendar data from the configured iCal URLs.
 Calendar data is processed locally.
 
-iCal URLs may contain private information. They are masked on screen but stored as plain text in @Resources/Variables.inc.
-Do not publish them in repositories, forum posts, or screenshots.
+### Changes in v1.1.7
 
-#Author
+- Added Sunday-first and Monday-first week selection
+- Corrected Sunday and Saturday colors in Monday-first mode
+- Set Japanese as the initial display language
+- Added safe defaults when settings files are missing
+- Added automatic settings-file creation
+- Improved saving for calendars, weather, colors, speech, and week-start settings
 
-kuroken2002
+### Feedback
 
-#GitHub:
+Even a quick “It works!” is welcome. Please share feedback, setup questions, bugs, or feature requests in [GitHub Discussions](https://github.com/kuroken2002/GoogleCalendarMonth-Rainmeter/discussions/2) or the [Rainmeter Forum](https://forum.rainmeter.net/viewtopic.php?t=46019).
 
-https://github.com/kuroken2002/GoogleCalendarMonth-Rainmeter
+</details>
+
+## Author
+
+[kuroken2002](https://github.com/kuroken2002)
