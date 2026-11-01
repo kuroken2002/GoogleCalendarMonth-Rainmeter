@@ -1,4 +1,4 @@
-Google Calendar Month for Rainmeter
+# Google Calendar Month for Rainmeter
 ![Google Calendar Month for Rainmeter](Google_Calendar_Month_v115.png)
 
 A monthly Google Calendar skin for Rainmeter.
