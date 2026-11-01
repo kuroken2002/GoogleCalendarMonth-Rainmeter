@@ -6,66 +6,6 @@ Display Google Calendar events on your Windows desktop using iCal / ICS.
 Googleカレンダーの予定をWindowsデスクトップに月間表示する
 Rainmeter用カレンダースキンです。
 
-
-
-Features
-
-Google Calendar iCal / ICS integration
-
-Monthly calendar view for Rainmeter
-
-Shared calendar support
-
-Holiday calendars
-
-Multilingual UI
-
-Voice announcements
-
-Configurable event colors
-
-Previous / Current / Next month navigation
-
-Sunday-first / Monday-first week selection
-
-Up to 5 events per day
-
-Optional seven-day weather icons
-
-Masked iCal URLs in Settings
-
-Download
-
-Download the latest release from GitHub Releases:
-
-https://github.com/kuroken2002/GoogleCalendarMonth-Rainmeter/releases
-
-Release assets:
-
-Google.Calendar.Month_1.1.7.rmskin — standard Rainmeter installer
-
-GoogleCalendarMonth_1.1.7.zip — new manual installation
-
-GoogleCalendarMonth_1.1.7_upgrade.zip — in-place update that preserves existing settings
-
-Back up @Resources/Variables.inc and @Resources/SpeechSettings.inc before upgrading.
-
-Google Calendar Integration
-
-This Rainmeter calendar skin uses the private iCal / ICS URL provided by Google Calendar.
-
-You can display:
-
-Main Google Calendar
-
-Shared Google Calendar
-
-Holidays
-
-Recurring events
-
-Multi-day events
-
 💬 Feedback / 感想・使用報告
 
 Tried the skin? Even a quick “It works!” is welcome in the feedback thread. Feel free to share your impressions, report a problem, or suggest an idea.
