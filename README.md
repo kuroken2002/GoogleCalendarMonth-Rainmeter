@@ -1,4 +1,4 @@
-# Google Calendar Month for Rainmeter
+## Google Calendar Month for Rainmeter
 ![Google Calendar Month for Rainmeter](Google_Calendar_Month_v115.png)
 
 A monthly Google Calendar skin for Rainmeter.
@@ -18,7 +18,7 @@ Google カレンダー月間 for Rainmeter
 Googleカレンダーの予定を月間表示するRainmeterスキンです。
 A Rainmeter skin that displays Google Calendar events in a monthly calendar view.
 
-主な機能 / Features
+#主な機能 / Features
 
 カレンダー表示 / Calendar
 
@@ -114,13 +114,13 @@ GitHub の最新リリースを定期確認
 
 自動更新は行いません
 
-改良・派生について / Contributions
+#改良・派生について / Contributions
 
 このプロジェクトの解析・改良・派生開発は歓迎します。
 バグ修正、改善、新しい機能などを作成した場合は、GitHub Issue、Pull Request、または Rainmeter Forum を通じて本家にも知らせてもらえると助かります。
 派生版の作成も歓迎します。多くの利用者に役立つ改善であれば、本家への取り込みも検討します。
 
-Features
+#Features
 
 Calendar
 
@@ -216,13 +216,13 @@ Clicking the notification opens GitHub Releases
 
 Updates are not installed automatically
 
-Contributions
+#Contributions
 
 You are welcome to study, modify, improve, and build upon this project.
 If you create bug fixes, improvements, or useful new features based on this project, please let the original project know through a GitHub Issue, Pull Request, or the Rainmeter Forum.
 Forks and derivative works are welcome. If your improvement may be useful to other users, I would be happy to consider bringing it back into the original project.
 
-必要環境 / Requirements
+#必要環境 / Requirements
 
 Windows 10 / 11
 
@@ -236,7 +236,7 @@ Rainmeter:
 
 https://www.rainmeter.net/
 
-手動インストール / Manual Installation
+#手動インストール / Manual Installation
 
 新規・手動インストールでは、GoogleCalendarMonth_1.1.7.zip を展開し、ZIP内の GoogleCalendarMonth フォルダーを ドキュメント\Rainmeter\Skins へコピーします。Rainmeterの管理画面で「すべて更新」を実行し、GoogleCalendarMonth\GoogleCalendarMonth.ini を読み込んでください。
 
@@ -246,7 +246,7 @@ For a new manual installation, extract GoogleCalendarMonth_1.1.7.zip and copy th
 
 To preserve existing settings, copy GoogleCalendarMonth_1.1.7_upgrade.zip over the existing GoogleCalendarMonth folder without deleting the existing folder first.
 
-セットアップ / Setup
+#セットアップ / Setup
 
 .rmskin をインストールします。
 
@@ -264,7 +264,7 @@ URL入力後、Enterキーで確定します。
 
 「保存して閉じる」を押します。
 
-Setup
+#Setup
 
 Install the .rmskin package.
 
@@ -318,7 +318,7 @@ Deutsch / German
 
 Latest version: v1.1.7
 
-v1.1.7
+#v1.1.7
 
 週の開始曜日を日曜始まり・月曜始まりから選択可能
 
@@ -336,7 +336,7 @@ Added Sunday-first and Monday-first week selection.
 
 Added safe defaults and settings-file creation when configuration files are missing.
 
-v1.1.6
+#v1.1.6
 
 設定画面を iCal / 基本設定 / 配色 / 読み上げの4タブに整理
 
@@ -352,7 +352,7 @@ v1.1.6
 
 Reorganized Settings, masked iCal URLs, improved weather, and fixed window layering.
 
-v1.1.5
+#v1.1.5
 
 7日分の天気アイコン表示に対応（初期状態はOFF）
 
@@ -372,7 +372,7 @@ Added a “Get current location” button using approximate IP-based geolocation
 
 Added manual latitude and longitude input.
 
-v1.1.4
+#v1.1.4
 
 メインiCal設定を「基本設定」タブへ統合
 
@@ -388,7 +388,7 @@ iCal URLの [1] / [2] 表記を削除
 
 設定画面のレイアウトを整理
 
-v1.1.3
+#v1.1.3
 
 共有カレンダー1件に対応
 
@@ -404,7 +404,7 @@ iCal URL入力欄の改善
 
 設定画面のレイアウト改善
 
-v1.1.2
+#v1.1.2
 
 多言語表示対応
 
@@ -432,7 +432,7 @@ Google Calendar Month for Rainmeter:
 
 https://forum.rainmeter.net/viewtopic.php?t=46019
 
-Privacy
+#Privacy
 
 このスキンは、設定された iCal URL からカレンダーデータを取得します。
 取得したデータはローカルで処理されます。
@@ -446,10 +446,10 @@ Calendar data is processed locally.
 iCal URLs may contain private information. They are masked on screen but stored as plain text in @Resources/Variables.inc.
 Do not publish them in repositories, forum posts, or screenshots.
 
-Author
+#Author
 
 kuroken2002
 
-GitHub:
+#GitHub:
 
 https://github.com/kuroken2002/GoogleCalendarMonth-Rainmeter
